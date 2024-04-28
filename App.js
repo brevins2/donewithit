@@ -1,12 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, Image, Button, Alert, View } from 'react-native';
+import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
 
 export default function App() {
+  console.log('====================================');
+  console.log(useDeviceOrientation());
+  console.log('====================================');
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView>
+      <View style={{
+        backgroundColor: 'dodgerblue',
+        width: '50%',
+        height: 300,
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}>
+
+      </View>
+    </SafeAreaView>
   );
 }
 
