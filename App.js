@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, Image, Button, Alert, View, TouchableOpacity, TextInput } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, Image, Button, Alert, View, TouchableOpacity, TextInput, ScrollView } from 'react-native';
 import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
 import { useState } from 'react';
 
@@ -20,7 +20,11 @@ export default function App() {
           <Text style={styles.buttonText}>Done</Text>
         </TouchableOpacity>
 
-        <View style={styles.backpopup}></View>
+        <View style={styles.backpopup}>
+          <ScrollView style={styles.popup}>
+            She had a terrible habit o comparing her life to others. She realized that their life experiences were completely different than her own and that she saw only what they wanted her to see, but that didn't matter. She still compared herself and yearned for what she thought they had and she didn't.
+          </ScrollView>
+        </View>
       </View>
     </SafeAreaView>
   );
